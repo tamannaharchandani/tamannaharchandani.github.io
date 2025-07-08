@@ -1,29 +1,28 @@
 /* Full height fix */
 .js-fullheight {
-    height: 100vh;
+  height: 100vh;
 }
 
 /* Mobile overrides */
 @media (max-width: 767.98px) {
-    .home-wrap {
-        flex-direction: row !important;
-    }
+  .home-wrap {
+    flex-direction: row !important;
+  }
 
-    .half.order-md-last {
-        display: 100% !important;
-        /* hide the empty black side on mobile */
-    }
+  .half.order-md-last {
+    display: none !important; /* hide the empty black side on mobile */
+  }
 
-    .half {
-        width: 100% !important;
-    }
+  .half {
+    width: 100% !important;
+  }
 
-    .slider-item,
-    .slider-text,
-    .one-third.img {
-        height: 100vh !important;
-        width: 100vw !important;
-        background-size: cover !important;
-        background-position: center !important;
-    }
+  .slider-item,
+  .slider-text,
+  .one-third.img {
+    height: 100vh !important;
+    width: 100vw !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
 }
