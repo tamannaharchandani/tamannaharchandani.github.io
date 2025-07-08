@@ -1,15 +1,12 @@
+/* Maintain full height */
 .js-fullheight {
     height: 100vh;
 }
 
+/* Force row to stay horizontal even on mobile */
 @media (max-width: 767.98px) {
-    .js-fullheight {
-        height: 100vh;
-    }
-
     .home-wrap {
         flex-direction: row !important;
-        /* keep same layout on phone */
     }
 
     .slider-text {
@@ -23,9 +20,12 @@
         background-position: center center;
     }
 
-    .row.d-md-flex {
-        display: flex !important;
-        flex-direction: row !important;
+    .slider-item {
+        height: 100vh;
     }
 
+    .container-fluid,
+    .row {
+        height: 100%;
+    }
 }
