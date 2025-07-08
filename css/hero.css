@@ -1,4 +1,31 @@
-.object-fit-cover {
-    object-fit: cover;
-    object-position: center;
+.js-fullheight {
+    height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+    .js-fullheight {
+        height: 100vh;
+    }
+
+    .home-wrap {
+        flex-direction: row !important;
+        /* keep same layout on phone */
+    }
+
+    .slider-text {
+        flex-direction: row !important;
+    }
+
+    .one-third.img {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .row.d-md-flex {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
 }
