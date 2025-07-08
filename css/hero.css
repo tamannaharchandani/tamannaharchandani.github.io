@@ -1,31 +1,29 @@
-/* Maintain full height */
+/* Full height fix */
 .js-fullheight {
     height: 100vh;
 }
 
-/* Force row to stay horizontal even on mobile */
+/* Mobile overrides */
 @media (max-width: 767.98px) {
     .home-wrap {
         flex-direction: row !important;
     }
 
-    .slider-text {
-        flex-direction: row !important;
+    .half.order-md-last {
+        display: none !important;
+        /* hide the empty black side on mobile */
     }
 
+    .half {
+        width: 100% !important;
+    }
+
+    .slider-item,
+    .slider-text,
     .one-third.img {
-        width: 100vw;
-        height: 100vh;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .slider-item {
-        height: 100vh;
-    }
-
-    .container-fluid,
-    .row {
-        height: 100%;
+        height: 100vh !important;
+        width: 100vw !important;
+        background-size: cover !important;
+        background-position: center !important;
     }
 }
