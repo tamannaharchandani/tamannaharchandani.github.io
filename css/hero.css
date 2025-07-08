@@ -1,7 +1,6 @@
+/* Full height fix */
 .js-fullheight {
     height: 100vh;
-    min-height: 100vh;
-    overflow: hidden;
 }
 
 /* Mobile overrides */
@@ -18,36 +17,13 @@
     .half {
         width: 100% !important;
     }
-  .js-fullheight {
-      height: 100VH !important;
-      min-height: 100vh !important;
-  }
-   .slider-item {
-       height: 100vh !important;
-       background-size: cover !important;
-       background-position: center !important;
-   }
-}
 
-.scroll-down i {
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(6px);
-    }
-
-    60% {
-        transform: translateY(3px);
+    .slider-item,
+    .slider-text,
+    .one-third.img {
+        height: 100vh !important;
+        width: 100vw !important;
+        background-size: cover !important;
+        background-position: center !important;
     }
 }
