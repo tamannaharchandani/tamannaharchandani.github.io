@@ -11,7 +11,7 @@
     }
 
     .half.order-md-last {
-        display: none!important;
+        display: none !important;
         /* hide the empty black side on mobile */
     }
 
@@ -19,7 +19,7 @@
         width: 100% !important;
     }
   .js-fullheight {
-      height: auto !important;
+      height: 100VH !important;
       min-height: 100vh !important;
   }
    .slider-item {
