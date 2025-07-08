@@ -26,3 +26,20 @@
     background-position: center !important;
   }
 }
+
+/* Initial state: hidden */
+#ftco-nav {
+    display: none;
+}
+
+/* When toggled: show it */
+#ftco-nav.show {
+    display: block;
+}
+
+/* Optional: adjust nav appearance for mobile */
+@media (min-width: 992px) {
+    #ftco-nav {
+        display: flex !important;
+    }
+}
