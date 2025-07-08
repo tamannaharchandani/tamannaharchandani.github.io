@@ -12041,7 +12041,11 @@ h5,
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
 }
-
+@supports (-webkit-touch-callout: none) {
+  .js-fullheight {
+    min-height: -webkit-fill-available;
+  }
+}
 .home-wrap .half {
   width: 50%;
   background: #000000;
